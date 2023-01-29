@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+  font-family: 'Ubuntu Condensed'  
+}
+
+.FrontHome {
+    display: flex;
+    background-size: cover;
+    background-image: url("./asd1.jpg");
+    height: 80vh;
+    width: 100vw;
+}
+.buttonGetTheYours{
+  color: white;
+  background-color: rgb(39, 39, 39);
+  border: 2px solid #fdfdfd; /* Green */
+  min-width: 11vw;
+  min-height: 6vh;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+
+.getTheYoursButtonContainer{
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h4{
+    text-align: center;
+}
+
+
+.FrontHomeDivition {
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
+    color: rgb(211, 211, 211);
+    width: 50vw;
+    padding-top: 14%;
+    flex-direction: column;
+}
+
+.description{
+    font-family: 'Roboto';
+    padding-left: 3%;
+    font-size: x-large;
+}
+
+.sub-title {
+    color: rgb(171, 189, 221);
+    margin-bottom: 9%;
+    font-size: larger;
+    text-align: center;
+}
+.title {
+    text-align: center;
+}
+
+.imageFondo {
+  position: absolute;
+  max-height: 30%;
+  animation: animate 5s linear infinite;
+    transform-origin:  bottom left;
+}
+.imageFondo1 {
+  position: absolute;
+    max-height: 30%;
+    animation: animate1 5s linear infinite;
+    transform-origin: bottom left;
+}
+.imageFondo2 {
+  position: absolute;
+  max-height: 30%;
+  animation: animate2 5s linear infinite;
+    transform-origin: bottom left;
+}
+.imageFondo3 {
+  position: absolute;
+  max-height: 30%;
+  animation: animate3 5s linear infinite;
+    transform-origin: bottom left;
+}
+.imageFondo4 {
+  position: absolute;
+  max-height: 30%;
+  animation: animate4 5s linear infinite;
+    transform-origin: bottom left;
+}
+
+@keyframes animate {
+    0%  {transform: rotate(0deg);}
+}
+@keyframes animate1 {
+  0%  {transform: rotate(0deg);}
+  50% {transform: rotate(5deg);}
+  100%{transform: rotate(0deg);}
+}
+@keyframes animate2 {
+  0%  {transform: rotate(0deg);}
+  50% {transform: rotate(10deg);}
+  100%{transform: rotate(0deg);}
+}
+@keyframes animate3 {
+  0%  {transform: rotate(0deg);}
+  50% {transform: rotate(15deg);}
+  100%{transform: rotate(0deg);}
+}
+@keyframes animate4 {
+  0%  {transform: rotate(0deg);}
+  50% {transform: rotate(20deg);}
+  100%{transform: rotate(0deg);}
+}
+
+@media (max-width: 600px) {
+    .description{ font-size: small }
+
+    .sub-title { font-size: medium; text-align: center; }
+  }
+
+@media (max-width: 620px) {
+    .FrontHome  { flex-direction: column  }
+    .FrontHomeDivition { width: 100vw; height: 60vh; padding-top: 5%;}
+  }
+
+  @media (max-height: 700px) {
+    .FrontHomeDivition {  height: 90vh; padding-top: 2%;}
+  }
+  @media (max-height: 500px) {
+    .FrontHomeDivition {  height: 40vh;}
+    .description {
+        font-size: x-small;}
+  }
+
+  /*
+.FrontHomeDivition{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: rgb(211, 211, 211);
+    border-radius: 0;
+    padding: 4%;
+    min-width: 50%;
+    height:auto;
+}
+*/
+/*
+.FrontHome {
+    display: flex;
+    background-size: cover;
+    background-image: url(http://localhost:3000/static/media/fondo.817c3da….png);
+    flex-direction: column;
+    max-height: 90vh;
+}
+*/

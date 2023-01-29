@@ -1,0 +1,50 @@
+#contact{
+    background-color: lightslategray;
+}
+#titleContact{
+    color: rgb(0, 0, 0);
+}
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #811b24;
+    padding: 5%;
+    width: 60vw;
+    border: 3px solid gold;
+
+}
+.cardContainer{
+    height: 20vh;
+    width: 12vw;
+}
+.optionBuyLabel{
+    text-align: left;
+}
+.titleGetOne{
+    text-align: center;
+}   
+.containerButtons{
+    display: flex;
+    justify-content: space-between;
+}
+.buttonsGetOne{
+    margin-top: 1.5vh;
+    padding: 1%;
+}
+.buttonsGetOne:hover{
+    transition: all .4s;
+    padding: 1%;
+    scale: 1.2;
+    box-shadow: 0px 0px 10px 1px;
+}
+.buttonsGetOne:active{
+    transition: all .1s;
+    background-color: rgb(255, 246, 177);
+    scale: 1;
+}
+
+@media (max-width:530px) {
+    .containerButtons {
+        flex-direction: column;
+    }
+}

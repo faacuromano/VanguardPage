@@ -1,0 +1,75 @@
+@font-face {
+    font-family: Odinson;
+    src: url('../../Fonts/Odinson.ttf') format('truetype');
+    font-style: normal;
+}
+
+.Logo{
+    font-family: "Odinson";
+    padding: 0;
+    margin: 0;
+}
+
+.links{
+    display: flex;
+}
+
+.link, .linkOwned{
+    color:rgb(218, 218, 218);
+    padding: 0;
+    margin: 0;
+}
+
+.linkSingUp{
+    font-weight: 700;
+    color:rgb(170, 203, 255);
+    padding: 0;
+    margin: 0;
+}
+.linkOwned{
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+.link:hover, .linkOwned:hover{
+    transition: all .5s;
+    transform: scale(1.25);
+    color:rgb(255, 255, 255);
+}
+
+.linkSingUp:hover{
+    transition: all .5s;
+    background-color: rgba(2, 2, 2, 0);
+    margin-right: 100%;
+}
+
+.navbar{
+    height: 10vh;
+    background-color: rgb(34, 35, 41);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 600px) {
+    .facet_sidebar {
+      display: none;
+    }
+  }
+
+@media (max-width: 550px) {
+    .FrontHomeDivition{ height: 60vh; padding-top: 15%; }
+    .container-fluid{ justify-content: center !important; }
+}
+
+@media (max-width: 260px){
+    .FrontHomeDivition {
+        height: 40vh; padding-top: 15%;
+    }
+}
+@media (max-width: 598px){
+    .FrontHomeDivition {
+       padding-top: 15%;
+    }
+    .linkSingUp{ font-size: x-large }
+
+}

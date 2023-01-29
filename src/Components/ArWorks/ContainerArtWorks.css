@@ -1,0 +1,56 @@
+
+body {
+    font-family: Source Sans Pro,sans-serif;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    background: var(--background-color);
+    overflow-x: hidden;
+}
+.artowrk-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(min(100%/2,max(230px)),1fr));
+}
+
+.cardBody{
+background-color: beige;
+}
+
+.button{
+    color: white;
+    background-color: rgb(39, 39, 39);
+    border: 2px solid #fdfdfd; /* Green */
+    min-width: 11vh;
+    min-height: 6vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+.button:hover{
+    transition: all .5s;
+    color: black;
+    background-color: beige;
+    border: 2px solid #000000; /* Green */
+}
+
+.background-true{
+    background: rgb(185, 174, 160);
+}
+
+.titelMimimized{
+    color: rgb(55, 64, 122);
+    text-align: center;
+    padding-top: 5%;
+}
+
+.default-container{
+    background:  rgb(185, 174, 160);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width:436px) {
+    .artowrk-container{
+        grid-template-columns: repeat(auto-fill,minmax(min(100%/1,max(300px,50%/5)),3fr));
+    }
+}

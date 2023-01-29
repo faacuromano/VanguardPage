@@ -1,0 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.background{
+  background-image: '../public/fondo.png'
+}
+
+.root{
+  background-color: black;
+
+}
